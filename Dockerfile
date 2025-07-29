@@ -5,7 +5,7 @@ FROM nginx:alpine
 RUN rm -rf /usr/share/nginx/html/*
 
 # Copy project files into NGINX web root
-COPY . /usr/share/nginx/html
+COPY index.html /usr/share/nginx/html/index.html
 
 # Expose port
 EXPOSE 80
